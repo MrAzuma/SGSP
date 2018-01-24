@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundologin"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/marca_ifsp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.00"
+                android:text="FORMULÁRIO DE ENCAMINHAMENTO"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.77"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:hint="Prontuário"
+                    android:inputType="text|number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:id="@+id/btn_buscar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/icon_search"
+                    android:clickable="true"
+                    android:onClick="busca" />
+
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:hint="Nome Completo"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_curso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Curso"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_ano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Semestre/Ano"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txt_nivel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Nível ensino" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rbt_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.00"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbt_aberto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickRadio"
+                    android:text="Aberto" />
+
+                <RadioButton
+                    android:id="@+id/rbt_social"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickRadio"
+                    android:text="Assistente Social" />
+
+                <RadioButton
+                    android:id="@+id/rbt_socio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickRadio"
+                    android:text="Sóciopedagógico" />
+
+                <RadioButton
+                    android:id="@+id/rbt_psicologo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClickRadio"
+                    android:text="Psicólogo" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/txt_motivo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.88"
+                android:autoText="false"
+                android:ems="100"
+                android:enabled="true"
+                android:hint="Descrição do encaminhamento"
+                android:inputType="textMultiLine" />
+
+
+            <Button
+                android:id="@+id/btn_enviar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="16dp"
+                android:background="#99e699"
+                android:onClick="sincronizar"
+                android:text="Enviar"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
