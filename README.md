@@ -5,5 +5,8 @@ Instituto Federal de Ciências e Tecnologia de São Paulo.
 
 O Aplicativo serve para o Docente enviar um relato de um aluno que esteja tendo problemas no seu desenvolvimento escolar.
 
-Autores: Igor Henrique Constant, Giovane Mitsura Azuma, Leonardo Picanço Bottaro.
+Autores: Igor Henrique Constant, Giovane Mitsura Azuma, Leonardo Picanço Bottaro e Ruan Mendes.
+
+
+
 Orientadores: Claudio Roveri, Claudio Haruo Yamamoto.
