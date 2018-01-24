@@ -9,4 +9,6 @@ Autores: Igor Henrique Constant, Giovane Mitsura Azuma, Leonardo Picanço Bottar
 
 
 
-Orientadores: Claudio Roveri, Claudio Haruo Yamamoto.
+Orientadores: Claudio Roveri - Web
+Claudio Haruo Yamamoto - Banco de Dados
+Edson Murakami - Documentação do Projeto e Arquitetura do Projeto.
